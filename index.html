@@ -8,7 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
   <meta name="description" content="">
-  
+  <link href="https://vjs.zencdn.net/7.18.1/video-js.css" rel="stylesheet" />
+
   
   <title>F1</title>
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -68,7 +69,29 @@
         <div class="row justify-content-center">
             <div class="col-12 col-lg-10">
                 <h3 class="mbr-section-title mbr-fonts-style mb-3 display-1"><strong>Canal Formula 1</strong></h3>
-                <iframe width="853" height="480" src="https://web.microsoftstream.com/embed/video/a74193be-d7f5-4d4c-b130-bb0b88453e35?autoplay=true&showinfo=true" allowfullscreen style="border:none;"></iframe>
+                <video
+                id="my-video"
+                class="video-js"
+                controls
+                preload="auto"
+                width="640"
+                height="480"
+                poster="https://graffica.info/wp-content/uploads/2017/11/LOGOS-1.png.jpg"
+                data-setup="{}"
+                autoplay
+              >
+                <source src="https://cdn.livepeer.com/hls/a030zep3fthd2rth/index.m3u8" type="application/x-mpegURL">
+                <p class="vjs-no-js">
+                  To view this video please enable JavaScript, and consider upgrading to a
+                  web browser that
+                  <a href="https://videojs.com/html5-video-support/" target="_blank"
+                    >supports HTML5 video</a
+                  >
+                </p>
+              </video>
+            
+              <script src="https://vjs.zencdn.net/7.18.1/video.min.js"></script>
+
                 <p class="mbr-text mbr-fonts-style mb-3 display-7"></p>
                 
                 <div class="social-row display-7 mt-5">
